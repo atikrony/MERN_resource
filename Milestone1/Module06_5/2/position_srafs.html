@@ -1,0 +1,112 @@
+<!-- 
+Static
+Relative
+Absolute
+Fixed
+Sticky 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="../../global_style.css" />
+    <!-- <link rel="stylesheet" href="../navbar.css" /> -->
+    <style>
+      .container {
+        position: relative;
+        border: 2px solid peru;
+        width: 210px;
+      }
+
+      .box {
+        border: 2px dotted plum;
+        width: 200px;
+      }
+
+      img {
+        width: 200px;
+      }
+
+      /* .hole {
+        position: relative;
+        left: 50px;
+        top: -30px;
+      } */
+
+      /* .hole {
+        position: absolute;
+        left: 50px;
+        top: -30px;
+      } */
+
+      .hole {
+        position: sticky;
+        left: 50px;
+        top: 200px;
+      }
+      /* .hole {
+        position: fixed;
+        left: 50px;
+        top: 200px;
+      } */
+
+      .dummy {
+        border: 1px solid teal;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../1/pseudo.html">Pseudo</a></li>
+        <li><a href="../2/position_srafs.html">CSS Positioning</a></li>
+        <li><a href="../3/z_index.html">Stack Elements</a></li>
+        <li><a href="../3/psudo.html">script</a></li>        <li><a href="../4/script.html">Stack Elements</a></li>
+
+      </ul>
+    </nav>
+    <h3>CSS Potisions</h3>
+    <ol>
+      <!-- Flow Related -->
+      <li>Static</li>
+      <p>By default Static</p>
+      <li>Relative</li>
+      <p>Will take space but movable</p>
+      <li>Absolute</li>
+      <p>Will lose its own position and will move based on its root</p>
+      <!-- Scroll Related -->
+      <li>Fixed</li>
+      <p>Shob div e jabe</p>
+      <li>Sticky</li>
+      <p>nijer div er area te thakbe</p>
+      <div class="container">
+        <div class="box">
+          <img src="./png/002-character.png" alt="none" />
+        </div>
+        <div class="box hole">
+          <img src="./png/001-isometric.png" alt="none" />
+        </div>
+        <div class="box">
+          <img src="./png/003-zen.png" alt="none" />
+        </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+      </div>
+      <div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+      </div>
+    </ol>
+  </body>
+</html>

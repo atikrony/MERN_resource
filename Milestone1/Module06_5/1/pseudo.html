@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+    <link rel="stylesheet" href="../../global_style.css" />
+    <!-- <link rel="stylesheet" href="../navbar.css" /> -->
+    <style>
+      h3 {
+        color: peru;
+      }
+      h3:hover {
+        color: tomato;
+        background-color: skyblue;
+      }
+      input:focus {
+        color: blue;
+        padding-left: 20px;
+        outline: 5px solid rgb(187, 255, 0);
+        border: 4px solid purple;
+      }
+
+      a:visited {
+        color: grey;
+      }
+
+      /* li:first-child {
+        color: aqua;
+      } */
+      /* 
+      li:last-child {
+        color: brown;
+      } */
+
+      li:nth-child(2n + 1) {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../1/pseudo.html">Pseudo</a></li>
+        <li><a href="../2/position_srafs.html">CSS Positioning</a></li>
+        <li><a href="../3/z_index.html">Stack Elements</a></li>
+        <li><a href="../3/psudo.html">Stack Elements</a></li>
+        <li><a href="../4/script.html">script</a></li>
+      </ul>
+    </nav>
+    <h3>My heading</h3>
+    <input type="text" /> <br /><br />
+    <input type="text" /><br /><br />
+    <input type="text" /><br /><br />
+
+    <a href="http://google.com" target="_blank">Google</a>
+    <a href="http://bbc.com" target="_blank">bbc</a>
+
+    <ul>
+      <li>ABC</li>
+      <li>DEF</li>
+      <li>GHI</li>
+      <li>JKL</li>
+      <li>MNO</li>
+      <li>PQR</li>
+    </ul>
+  </body>
+</html>

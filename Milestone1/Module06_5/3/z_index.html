@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stack elements z-index and pseudo element</title>
+    <link rel="stylesheet" href="../../global_style.css" />
+    <!-- <link rel="stylesheet" href="../navbar.css" /> -->
+  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSS Positioning</title>
+      <link rel="stylesheet" href="../../global_style.css" />
+      <style>
+        .box {
+          position: relative;
+        }
+        img {
+          width: 200px;
+        }
+
+        .man {
+          z-index: 10;
+        }
+
+        .hole {
+          top: -100px;
+          z-index: 1;
+        }
+        .water {
+          top: -250px;
+        }
+      </style>
+    </head>
+    <body>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../1/pseudo.html">Pseudo</a></li>
+          <li><a href="../2/position_srafs.html">CSS Positioning</a></li>
+          <li><a href="../3/z_index.html">Stack Elements</a></li>
+          <li><a href="../3/psudo.html">Psudo Elements</a></li>
+          <li><a href="../4/script.html">script</a></li>
+        </ul>
+      </nav>
+      <h3>z-index</h3>
+      <div class="container">
+        <div class="box man">
+          <img src="../2/png/002-character.png" alt="none" />
+        </div>
+        <div class="box hole">
+          <img src="../2/png/001-isometric.png" alt="none" />
+        </div>
+        <div class="box water">
+          <img src="../2/png/003-zen.png" alt="none" />
+        </div>
+      </div>
+    </body>
+  </html>
+</html>
