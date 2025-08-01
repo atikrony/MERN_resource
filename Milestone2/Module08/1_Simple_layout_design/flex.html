@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .box {
+        background-color: beige;
+        border: 1px solid grey;
+        border-radius: 13px;
+        padding: 20px;
+      }
+      .item {
+        background-color: aquamarine;
+        padding: 5px;
+        border: 2px solid blueviolet;
+        border-radius: 10px;
+        width: 200px;
+        height: 100px;
+      }
+      .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+        .container2 {
+            
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexible flex</h2>
+    <div class="container">
+      <div class="box">
+        <h3>First flex box</h3>
+        <p>
+          Flexbox is short for the Flexible Box Layout module. Flexbox is a
+          layout method for arranging items in rows or columns. Flexbox makes it
+          easier to design a flexible responsive layout structure, without using
+          float or positioning.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Second flex box</h3>
+        <p>
+          Flexbox is short for the Flexible Box Layout module. Flexbox is a
+          layout method for arranging items in rows or columns. Flexbox makes it
+          easier to design a flexible responsive layout structure, without using
+          float or positioning.
+        </p>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="item">Item - 1</div>
+      <div class="item">Item - 2</div>
+      <div class="item">Item - 3</div>
+      <div class="item">Item - 4</div>
+      <div class="item">Item - 5</div>
+      <div class="item">Item - 6</div>
+      <div class="item">Item - 7</div>
+      <div class="item">Item - 8</div>
+      <div class="item">Item - 9</div>
+      <div class="item">Item - 10</div>
+    </div>
+  </body>
+</html>
