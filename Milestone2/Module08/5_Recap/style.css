@@ -1,0 +1,64 @@
+.pagemain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 15px;
+  font-style: normal;
+}
+
+p,
+h1,
+h3,
+h5,
+h4 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  max-width: 1200px;
+}
+
+.para {
+  color: #6d6d6d;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2%;
+  width: 200px;
+  position: relative;
+}
+
+.icon {
+  width: 100px;
+}
+
+img {
+  width: 40px;
+  border-radius: 15px;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.mainbody {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  .mainbody {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
