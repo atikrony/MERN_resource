@@ -1,3 +1,7 @@
+.box {
+  border: 2px solid red;
+}
+
 .pagemain {
   display: flex;
   justify-content: center;
@@ -29,13 +33,17 @@ h4 {
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
-  padding: 2%;
+  padding: 20px;
   width: 200px;
   position: relative;
 }
 
 .icon {
   width: 100px;
+}
+
+.icon3 > img {
+  width: 40px;
 }
 
 img {
@@ -54,6 +62,8 @@ body {
   justify-content: center;
 }
 
+/* small device */
+
 @media screen and (max-width: 576px) {
   .mainbody {
     flex-direction: column;
@@ -61,4 +71,47 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+
+/* medium device */
+
+@media screen and (min-width: 576px) and (max-width: 969px) {
+  .mainbody {
+    display: grid;
+    /* display: flex;
+    flex-wrap: wrap; */
+    grid-template-columns: repeat(2, 2fr);
+    /* justify-content: center; */
+    /* align-items: center; */
+    place-items: center;
+    gap: 20px;
+  }
+}
+
+.contact {
+  display: grid;
+  flex-wrap: wrap;
+  border: 1px solid blueviolet;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 240, 201);
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.left-section {
+  place-items: left;
+}
+
+.right-section {
+  place-items: left;
+}
+
+#subButton {
+  color: white;
+  background-color: orange;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
 }
