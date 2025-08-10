@@ -87,31 +87,3 @@ body {
     gap: 20px;
   }
 }
-
-.contact {
-  display: grid;
-  flex-wrap: wrap;
-  border: 1px solid blueviolet;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 240, 201);
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.left-section {
-  place-items: left;
-}
-
-.right-section {
-  place-items: left;
-}
-
-#subButton {
-  color: white;
-  background-color: orange;
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-}
