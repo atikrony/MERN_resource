@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 1px solid blue;
+        max-width: 1140px;
+        margin: auto;
+      }
+
+      .image-container {
+        display: flex;
+      }
+      .image-container div {
+        width: 50%;
+      }
+      .image-container img {
+        width: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        .image-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>Responsive Website</h3>
+      <ol>
+        <li>viewport meta tag</li>
+        <li>css relative unit</li>
+        <li>body max width and horizontal center align</li>
+        <li>image fluid</li>
+        <li>two column flex and use media query with flex direction column</li>
+        <li>multi column: grid layout</li>
+        <li>Menu Responsive with jaava script</li>
+      </ol>
+    </header>
+    <main>
+      <div class="image-container">
+        <div>
+          <img
+            src="https://cdn.pixabay.com/photo/2023/05/30/16/56/food-8029158_640.png"
+            alt="Jhonny English"
+          />
+        </div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNbi2Lz0cOp4yKVFPMwu2f9kmmyylVkNZodsc2VzI-tJxqFT7t_vBMfrYPgwsIORl9VBw&usqp=CAU"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
