@@ -20,6 +20,7 @@
   color: #727272;
 }
 .bg-light {
+  padding-bottom: 50px;
   background-color: rgba(255, 144, 14, 0.1);
 }
 
@@ -77,5 +78,29 @@
 }
 
 .banner-image {
-    width: 100%;
+  width: 100%;
+}
+
+/* Main body  */
+
+.body-margin {
+  margin: 50px, 100px;
+}
+
+.container-1 {
+}
+
+.team-img {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+/* responsive  */
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+  }
 }
